@@ -1,0 +1,21 @@
+
+===CONTACT INFO ===========
+
+Name:  {{ data.contact_name }}
+Email: {{ data.contact_email }}
+Phone: {{ data.contact_phone }}
+
+
+===INSPECTION INFO =========
+
+Address: 
+       {{ data.inspection_address }} 
+       {{ data.inspection_city }}, {{ data.inspection_state }} {{ data.inspection_zip }}
+
+Square Feet: {{ data.inspection_square_foot }}
+Date-time:   {{ data.inspection_date1 }} - {{ data.inspection_time1 }}
+Date-time:   {{ data.inspection_date2 }} - {{ data.inspection_time2 }}
+  
+Comment
+
+{{ data.comment }}

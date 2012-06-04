@@ -1,0 +1,18 @@
+{% if form %}
+	<form action="" method="post">{% csrf_token %}
+		<dl class='contactform'>
+			{% for field in form %}
+				    <dt class="fieldWrapper">
+				       {{ field.label_tag }} {{ field.errors }}
+				    </dt>
+				    <dd class="fieldWrapper">
+				        {{ field }}
+				    </dd>
+			{% endfor %}
+			<dt><input type="submit" value="Send" /></dt>
+		</dl>
+	</form>
+{% else %}
+	<h1>Message sent successfully.</h1>
+	<h2>{{ contact.thanks }}</h2>
+{% endif %}

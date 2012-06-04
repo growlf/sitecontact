@@ -1,0 +1,9 @@
+Name: {{ data.name }}{{ data.author }}
+Email: {{ data.email }}
+{% if data.phone %}Phone: {{ data.phone }}{% endif %}
+{% if data.fax %}FAX: {{ data.fax }}{% endif %}
+{{ request }}
+
+Message: 
+{% if data.date_given %}{{ date.date_given }}{% endif %}{% if data.poster_ip %}{{ date.poster_ip }}{% endif %}
+{{ data.content }}{{ data.testimony }}
